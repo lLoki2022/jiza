@@ -3,132 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Модуль</title>
-    <!-- Подключение стилей Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <title>🪙 URL Modifier</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #212529;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-control {
+            background-color: #343a40;
+            color: #fff;
+            border-color: #495057;
+        }
+        .form-control:focus {
+            background-color: #343a40;
+            color: #fff;
+            border-color: #6c757d;
+            box-shadow: none;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+        .result {
+            background-color: #343a40;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="animated-text">⚔♛ЖИЗА♛⚔</h1>
-        <nav>
-            <ul>
-                <li><a href="#главная">Главная</a></li>
-                <li><a href="#новости">Новости</a></li>
-                <li><a href="#скачать">Скачать</a></li>
-                <li><a href="#сообщество">Сообщество</a></li>
-                <li><a href="#контакты">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="главная">
-        <h2>Скриншоты</h2>
-        <div class="slider">
-            <div><img src="https://lh3.googleusercontent.com/Bd1JqkD-h4682v4iw0hmWZoXCBJZn8Cy_AwrqKILSFOzmYYjqiz7Tg6TuyMMDT06dL6zqvH8etvChBcF88twhEJtAlUedjrK2hN369oOE4Kkp7C9UnoAGkdliiudD1H6iAU3CLg_kRRBJDh2qvoI2Pz6CH6O--LhJzFZkug_yJ4kdVlJTW6CQilUB_NHgg" alt="Слайд 1"></div>
-            <div><img src="https://lh4.googleusercontent.com/S4ZHyuF3bXSpoofqYb0HAEWGr0ACycK7GAGtxl9zU26_Bdy0Asm7nFDyNuIgzIQKmkz3xVNjedOqHzMjPsuaSe9Xz5r48qXORGgufWhBlF6MOGekIhf5Z_iURhqeCnrtQ_qUe7f2Wmzg2cJvg_2U3iFrdtywGugqAe0NFiOY_a1aa_x9PwfupjH_qTwFTg" alt="Слайд 2"></div>
-            <div><img src="https://lh3.googleusercontent.com/aM4paGM7E_GLcIAkAe5tOEmN7hydIxlhkihlw5bXiuTLBvTw1E_-Y0ohIulBfhA5feXbKCmGq3aD03i9QNUJVNiZnJBVr9hyEV2D40F6NWK5IpYib7qnNtHP2KSvFPizt58vulNvFrhsFZb8ZwSBqJvfDk_2lMUVA5sxurZCYl7khCtHcJ9vGnO-b3jT5A" alt="Слайд 3"></div>
-            <div><img src="https://lh3.googleusercontent.com/W4JFt1dO0ffBsJ47xZ4GMr6xlURrnCzwNlqYLgz1hK6i2cso4R9e-eyDi0h1msaW4VogXA_I4Wl62sXy5-WtBoMHVOpv4GwkdO4Ps16rxnD8rl7VLiaHsoSRIOoEWJo8hMPhmniTxyNr5I4sw2f5pcvkjG57MSpLaUdO2HLdwFZX7997WchlXnyuV3K_YQ" alt="Слайд 4"></div>
-            <div><img src="https://lh4.googleusercontent.com/jfbhhGVHbA72YcPdCn_RHHWhxHMRK6QPKJlMjVRC5MnhlPBqOsj8L5kvSEB4kFIBJSVCz9l_Zqn4hjE2dMFA6-2nOcOkLo5baMZI4TsvN64PzCGytZehl4aZ9Qkl01uGKDuaDrAu1FVCkrDfzDD9KsInuzeBbb5wRPnh2_Rk9_3pxwY4PqxGn3_g2eo9gQ" alt="Слайд 5"></div>
-        </div>
-    </section>
-
-    <section id="новости">
-        <h2>Новости</h2>
-        <p>Это большой сборник готовых макросов для упрощения игры на сервере. Вам нужно будет только настроить их для себя, а удобный и красивый интерфейс поможет в этом!</p>
-
-        <p>Модуль работает на основе мода <a href="https://w.hil.su/Macro_Keybind" style="color: #7289da;">MacroKey Bind</a>, если у вас на сервере его нет, то не судьба. (Модуль написан под <a href="https://promo.mcskill.net/r/lLoki" style="color: #7289da;">PrisonRPG 1.7.10</a> и некоторые функции не будут работать на других серверах, администрация других серверов может не приветствовать использование модулей)</p>
-
-        <p>С модулем вы сможете:</p>
-        <ul>
-            <li>Быстро, легко и удобно настроить чат под себя.</li>
-            <li>Автоматически рекламировать свой магазин.</li>
-            <li>Автоматически заходить на сервер при загрузке клиента и перезаходить при рестарте сервера.</li>
-            <li>Видеть игроков, которые входят/выходят с сервера.</li>
-            <li>Включить отображение ближайших игроков.</li>
-            <li>Автоматически вводить команды при заходе на сервер.</li>
-            <li>Таймеры помогут вам не пропустить респавн боссов.</li>
-            <li>Удалить кучу лишних и ненужных сообщений из чата.</li>
-            <li>Слушать радио 24/7.</li>
-            <li>Иметь под рукой список всех правил сервера.</li>
-            <li>и многое другое со временем.</li>
-        </ul>
-    </section>
-
-    <section id="скачать">
-        <h2>Скачать</h2>
-        <p>Модуль работает на основе мода <a href="https://w.hil.su/Macro_Keybind" style="color: #7289da;"> MacroKey Bind</a>, если у вас на сервере его нет, то не судьба. (Модуль написан под <a href="https://promo.mcskill.net/r/lLoki" style="color: #7289da;">PrisonRPG 1.7.10</a> и некоторые функции не будут работать на других серверах, администрация других серверов может не приветствовать использование модулей)</p>
-        <a href="https://cdn.discordapp.com/attachments/1010915337732104275/1083538659619373166/module_jiza_api16.jar" class="button box">Скачать модуль</a>
-    </section>
-
-    <section id="сообщество">
-        <h2>Сообщество</h2>
-        <p>Присоединяйтесь к нашему сообществу игроков, обсуждайте модуль, задавайте вопросы и делитесь своими впечатлениями.</p>
-        <a href="http://discord.gg/tvr58fFmNH" class="button box">Discord</a>
-    </section>
-
-    <section id="контакты">
-        <footer1>
-            <h2>Контакты</h2>
-            <div class="discord-contacts">
-                <div class="contact">
-                    <div class="discord-icon box">
-                        <a href="https://discord.com/users/335458557464018945">
-                            <img src="https://cdn.discordapp.com/avatars/335458557464018945/8db13e082ff826b4ba777bd7e4119dbc.webp?size=128" alt="Discord Icon">
-                        </a>
-                    </div>
-                    <p><a href="https://discord.com/users/335458557464018945">Администратор</a></p>
-					<h2 class="animated-text box">uraabk</h2>
-                </div>
-                <div class="contact">
-                    <div class="discord-icon box">
-                        <a href="https://discord.com/users/609619000787468289">
-                            <img src="https://cdn.discordapp.com/avatars/609619000787468289/40821c50c4f3fc0859a969afac3e1ef6.webp?size=128" alt="Discord Icon">
-                        </a>
-                    </div>
-                    <p><a href="https://discord.com/users/609619000787468289">Администратор</a></p>
-					<h2 class="animated-text box">lLoki</h2>
-                </div>
+    <div class="container">
+        <h1 class="text-center mb-4" id="title">🪙 URL Modifier</h1>
+        <form id="urlForm" class="mb-4">
+            <div class="input-group">
+                <input type="text" id="urlInput" class="form-control" placeholder="Enter or paste URL" required>
+                <button type="submit" id="modifyButton" class="btn btn-primary">Modify</button>
             </div>
-            <header>
-                <p>Если у вас есть вопросы или предложения, пожалуйста, свяжитесь с нами.</p>
-            </header>
-        </footer1>
-    </section>
-	
-    <footer1>
-        <p>&copy; 2023 ⚔♛ЖИЗА♛⚔</p>
-		<button onclick="toggleAudio()">Включить/Выключить звук</button>
-
-    </footer1>
-		
-    <!-- Подключение скриптов Slick Slider -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        </form>
+        <div id="result" class="result p-3 rounded"></div>
+        <div class="d-grid gap-2">
+            <div class="btn-group">
+                <button id="copyButton" class="btn btn-secondary" style="display: none;">Copy</button>
+                <button id="openButton" class="btn btn-secondary" style="display: none;">Open</button>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a id="githubLink" href="https://github.com/mudachyo/notcoin-modify-url" target="_blank" class="text-light">Source code on GitHub</a>
+        </div>
+    </div>
     <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                arrows: false,
-                infinite: true
-            });
-        });
-		
-		var audio = document.querySelector('audio');
+        const urlForm = document.getElementById('urlForm');
+        const urlInput = document.getElementById('urlInput');
+        const result = document.getElementById('result');
+        const copyButton = document.getElementById('copyButton');
+        const openButton = document.getElementById('openButton');
+        const title = document.getElementById('title');
+        const modifyButton = document.getElementById('modifyButton');
+        const githubLink = document.getElementById('githubLink');
 
-function toggleAudio() {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
-	
+        const translations = {
+            en: {
+                title: '🪙 URL Modifier',
+                placeholder: 'Enter or paste URL',
+                modify: 'Modify',
+                copy: 'Copy',
+                open: 'Open',
+                githubLink: 'Source code on GitHub'
+            },
+            ru: {
+                title: '🪙 Модификатор URL',
+                placeholder: 'Введите или вставьте URL',
+                modify: 'Изменить',
+                copy: 'Копировать',
+                open: 'Открыть в новой вкладке',
+                githubLink: 'Исходный код на GitHub'
+            },
+            fa: {
+                title: '🪙 تغییر دهنده URL',
+                placeholder: 'URL را وارد کنید یا بچسبانید',
+                modify: 'تغییر دادن',
+                copy: 'کپی کردن',
+                open: 'باز کردن',
+                githubLink: 'کد منبع در GitHub'
+            }
+        };
+
+        function setLanguage() {
+            const userLanguage = navigator.language.substring(0, 2);
+            const translation = translations[userLanguage] || translations.en;
+
+            title.textContent = translation.title;
+            urlInput.placeholder = translation.placeholder;
+            modifyButton.textContent = translation.modify;
+            copyButton.textContent = translation.copy;
+            openButton.textContent = translation.open;
+            githubLink.textContent = translation.githubLink;
+        }
+
+        urlForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            modifyURL();
+        });
+
+        urlInput.addEventListener('paste', function() {
+            setTimeout(modifyURL, 0);
+        });
+
+        urlInput.addEventListener('drop', function(event) {
+            event.preventDefault();
+            const droppedText = event.dataTransfer.getData('text');
+            urlInput.value = droppedText;
+            modifyURL();
+        });
+
+        copyButton.addEventListener('click', function() {
+            navigator.clipboard.writeText(result.textContent);
+        });
+
+        openButton.addEventListener('click', function() {
+            window.open(result.textContent, '_blank');
+        });
+
+        function modifyURL() {
+            let url = urlInput.value;
+            if (url.includes('tgWebAppPlatform=weba')) {
+                url = url.replace('tgWebAppPlatform=weba', 'tgWebAppPlatform=ios');
+            }
+            if (url.includes('tgWebAppPlatform=web')) {
+                url = url.replace('tgWebAppPlatform=web', 'tgWebAppPlatform=ios');
+            }
+            url = url.replace(/"/g, '');
+            result.textContent = url;
+            copyButton.style.display = 'inline-block';
+            openButton.style.display = 'inline-block';
+        }
+
+        setLanguage();
     </script>
 </body>
-<audio autoplay loop>
-    <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/mpeg">
-</audio>
 </html>
