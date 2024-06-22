@@ -1,180 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8" />
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="favicon.png" type="image/png">
-	<meta name="viewport" content="width=device-width, initial-scale=0.8" />
-
-	<!-- Primary Meta Tags -->
-	<title>IMGENX - Image generator by URL</title>
-	<meta name="title" content="IMGENX - Image generator by URL" />
-	<meta name="description"
-		content="A powerful tool for generating images fully built on the basis of a special URL pattern" />
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://lloki2022.github.io/jiza/" />
-	<meta property="og:title" content="IMGENX - Image generator by URL" />
-	<meta property="og:description"
-		content="A powerful tool for generating images fully built on the basis of a special URL pattern" />
-	<meta property="og:image" content="/banner.png" />
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://lloki2022.github.io/jiza/" />
-	<meta property="twitter:title" content="IMGENX - Image generator by URL" />
-	<meta property="twitter:description"
-		content="A powerful tool for generating images fully built on the basis of a special URL pattern" />
-	<meta property="twitter:image" content="/banner.png" />
-
-	<meta name="author" content="ghtx280">
-	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://lloki2022.github.io/jiza/" />
-	<meta http-equiv="content-language" content="en" />
-	<meta name="copyright" content="Copyright © 2024 IMGENX">
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" />
-	<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
-	<script>
-		Coloris({
-			swatches: [],
-			// wrap: false,
-
-		})
-	</script>
-
-
-
-	<!-- ====== analytics ====== -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZHYTKQH7H"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-1ZHYTKQH7H');
-	</script>
-	<!-- ======================= -->
-
-	%sveltekit.head%
-
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&family=Oswald:wght@200..700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
-
-
-		input[type="number"]::-webkit-inner-spin-button,
-		input[type="number"]::-webkit-outer-spin-button {
-			display: none;
-		}
-
-		input,
-		textarea,
-		select,
-		.btn {
-			/* margin: 5px; */
-			border-width: 1px;
-			border-color: #888;
-			padding: 5px;
-			min-width: 35px;
-			min-height: 35px;
-			background: none;
-		}
-
-		input[type="color"] {
-			width: 50px;
-			height: 50px;
-		}
-
-		button {
-			cursor: pointer;
-			background: none;
-		}
-
-		* {
-			border-color: #333 !important;
-		}
-
-		option {
-			color: #fff !important;
-			background: #111 !important;
-		}
-
-		::-webkit-scrollbar {
-			width: 3px;
-			height: 3px;
-		}
-
-		::-webkit-scrollbar-thumb {
-			background: white;
-		}
-
-		.clr-picker {
-			background: #111;
-			border: 1px solid #fff;
-		}
-
-		.clr-picker,
-		.clr-color {
-			border-radius: 0 !important;
-
-		}
-
-		.clr-color {
-			background: #000 !important;
-			color: #fff !important;
-		}
-
-		.clr-alpha,
-		.clr-hue {
-			height: 15px !important;
-			border-radius: 0 !important;
-			width: 100%;
-			margin: 5px 10px;
-		}
-
-		.clr-gradient {
-			margin-bottom: 5px !important;
-			border-radius: 0 !important;
-		}
-
-		.clr-field {
-			display: none !important;
-		}
-
-		.anim-pulse {
-			animation: pulse 3s infinite alternate;
-		}
-
-		@keyframes pulse {
-			0% {
-				scale: 1
-			}
-
-			100% {
-				scale: 1.2
-			}
-		}
-	</style>
-
-
-	<!-- BLICKCSS -->
-	<script src="https://unpkg.com/blickcss@2.1.12"></script>
-	<script>
-		blick.config({
-			class: {
-				events: {
-					_prop: "pointer-events:$"
-				}
-			}
-		})
-	</script>
-	<script src="https://unpkg.com/rem-mode-blickcss"></script>
-	<script>RemMode()(blick)</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCStatus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-
-<body data-sveltekit-preload-data="hover" class="bg-#111">
-	<div style="display: contents">%sveltekit.body%</div>
+<body>
+  <h1>MCStatus</h1>
+  <div id="content">
+    <p>Loading...</p>
+  </div>
+  <script>
+    async function fetchMCStatus() {
+      try {
+        const response = await fetch('https://api.mcstatus.io/v2/status/java/s32.mcskill.net:25530');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        document.getElementById('content').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+      } catch (error) {
+        document.getElementById('content').innerHTML = '<p>Error fetching data: ' + error.message + '</p>';
+      }
+    }
+    fetchMCStatus();
+  </script>
 </body>
-
 </html>
